@@ -6,8 +6,6 @@
 • To run this Discord bot, you'll need an environment with Node.js installed. It's recommended to use version 18.15.0 or higher of Node.js to ensure compatibility. Additionally, you'll need the dependencies listed in the project's package.json file.
 
 ### Development environment configuration 
-• Instrucciones paso a paso para configurar el entorno de desarrollo: 
-
 i. Node.js Installation: Go to the official Node.js website and download the latest stable version or version 18.15.0. Follow the installation instructions specific to your operating system.
 
 ii. Download and unzip the project's zip file.
@@ -34,12 +32,15 @@ EventHandler: This handler is responsible for loading and managing the bot's eve
 File "index.js":
 This will be the main file of the project. Here, the Discord bot will be configured, commands will be loaded, events will be set, and the bot will be started.
 
+File "package.json":
+This file will contain information about the project's dependencies, execution scripts, npm configuration, etc.
+
 File "config.json":  
 Contains the bot's ID and the OpenAi API.
 ## You must create it 
 To create the config.json properly on the root folder you must:
-### Use de id "token" for the bot's APIKEY
-### Use de id "OpenAiToken" for the OpenAi APIKEY
+# Use the id "token" for the bot's APIKEY
+# Use de the "OpenAiToken" for the OpenAi APIKEY
 
 ```json
 {
@@ -47,9 +48,5 @@ To create the config.json properly on the root folder you must:
     "OpenAiToken": "OPEN AI APIKEY"
 }
 ````
-
-
-File "package.json":
-This file will contain information about the project's dependencies, execution scripts, npm configuration, etc.
 
 Credits to [Elitzen](https://github.com/Elitezen) for making the conection between OpenAI chatbot and discord pretty easy with [discordjs-chatgpt](https://github.com/Elitezen/discordjs-chatgpt/tree/master)
