@@ -39,8 +39,8 @@ File "config.json":
 Contains the bot's ID and the OpenAi API.
 ## You must create it 
 To create the config.json properly on the root folder you must:
-# Use the id "token" for the bot's APIKEY
-# Use de the "OpenAiToken" for the OpenAi APIKEY
+#### Use the id "token" for the bot's APIKEY
+#### Use the "OpenAiToken" for the OpenAi APIKEY
 
 ```json
 {
