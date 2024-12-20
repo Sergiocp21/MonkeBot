@@ -32,6 +32,7 @@ This folder contains two handlers:
 
 CommandHandler: This handler is responsible for loading and managing the bot's commands. Commands are specific actions that the bot can perform in response to a command sent by a user. The handler reads the files from the commands folder and registers the commands on the Discord server. Additionally, it handles the execution of the commands when invoked.
 EventHandler: This handler is responsible for loading and managing the bot's events. Events are actions or occurrences that happen in Discord, such as the arrival of a new message, a user joining the server, etc. The handler reads the files from the events folder and registers the events so that the bot can detect and respond to them.
+
 File "index.js":
 This will be the main file of the project. Here, the Discord bot will be configured, commands will be loaded, events will be set, and the bot will be started.
 
