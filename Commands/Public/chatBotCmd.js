@@ -1,13 +1,6 @@
 const { SlashCommandBuilder } = require('discord.js');
 
-const { ChatGPTClient } = require('discordjs-chatgpt');
-const config = require("../../config.json");
-const chatgpt = new ChatGPTClient(config.OpenAiToken, { //OpenAi Api key
-  contextRemembering: true,
-  responseType: 'string', //It can be embed too
-  maxLength: 50 //Max tokens used for the response
-});
-
+const aiController = require("../../Functions/AIController");
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('hablar')
@@ -24,11 +17,9 @@ module.exports = {
       await interaction.reply({ content: 'Tienes que escribir un mensaje!', ephemeral: true });
       return;
     }
-    try {
-      await chatgpt.chatInteraction(interaction, msg);
-    } catch (e) {
-        interaction.editReply("Me estoy un comiendo plátano, espera a que me lo termine (inténtalo mas tarde)");
-        return;
+    else {
+      await aiController.generateReply(interaction, msg); //Send the message to the AI 
     }
+
   }
 };

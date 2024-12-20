@@ -10,9 +10,9 @@
   "author": "Sergio Carvajal",
   "license": "ISC",
   "dependencies": {
+    "@google/generative-ai": "^0.21.0",
     "ascii-table": "^0.0.9",
     "discord.js": "^14.11.0",
-    "discordjs-chatgpt": "^0.2.1",
     "glob": "^8.0.3",
     "jshint": "^2.13.6",
     "node-fetch": "^3.3.1"
