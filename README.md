@@ -1,3 +1,7 @@
+### NEW UPDATE!
+
+> Previously, my bot was powered by the OpenAI API, but I’ve switched to Google AI Studio because it provides a free plan. This shift allows for a more flexible and cost-efficient solution while maintaining the performance and capabilities of the bot.
+
 # What is MonkeBot?
 
 • MonkeBot was created with the aim of offering various interactive and entertaining functionalities on Discord servers.
