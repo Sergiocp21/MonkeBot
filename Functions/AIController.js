@@ -11,8 +11,7 @@ async function loadAI() {
     topP: 0.1,
     topK: 16,
   };
-
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash", generationConfig });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash", generationConfig });
 
   const chat = model.startChat({
     history: [
